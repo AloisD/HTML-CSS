@@ -1,0 +1,21 @@
+body {
+    background-color: slategrey;
+}
+
+.pixel {
+    height: 75px;
+    background-color: turquoise;
+    /* border: 1px solid white; */
+}
+
+.black {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+}
+
+.pink {
+    background-color: pink;
+}
