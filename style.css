@@ -4,17 +4,89 @@ body {
 
 .pixel {
     height: 75px;
-    background-color: turquoise;
+}
+
+.transparent {
+    background-color: #00000000;
+    animation-name: regen2;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .black {
     background-color: black;
+    animation-name: regen3;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .red {
     background-color: red;
+    animation-name: regen0;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .pink {
     background-color: pink;
+    animation-name: regen1;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.edge {
+    background-color: black;
+}
+
+@keyframes regen0 {
+    0% {background-color: red;}
+    92% {background-color: red;}
+    94% {background-color: gold;}
+    96% {background-color: red;}
+    98% {background-color: gold;}
+    100% {background-color: red;}
+}
+
+@keyframes regen1 {
+    0% {background-color: pink;}
+    20% {background-color: pink;}
+    40% {background-color: red;}
+    90% {background-color: red;}
+    92% {background-color: gold;}
+    94% {background-color: red;}
+    96% {background-color: gold;}
+    98% {background-color: red;}
+    100% {background-color: gold;}
+}
+
+@keyframes regen2 {
+    0% {background-color: #00000000;}
+    20% {background-color: #00000000;}
+    40% {background-color: pink;}
+    60% {background-color: red;}
+    92% {background-color: red;}
+    94% {background-color: gold;}
+    96% {background-color: red;}
+    98% {background-color: gold;}
+    100% {background-color: red;}
+}
+
+@keyframes regen3 {
+    0% {background-color: black;}
+    60% {background-color: black;}
+    80% {background-color: red;}
+    90% {background-color: red;}
+    92% {background-color: gold;}
+    94% {background-color: red;}
+    96% {background-color: gold;}
+    98% {background-color: red;}
+    100% {background-color: gold;}
 }
